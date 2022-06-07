@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Aviasales</title>
+</head>
+<body>
+    <header>
+        <img src="./image/logo.svg" width=60px height=60px alt="Logo">
+    </header>
+    <main class="container page">
+        <h1 class="visually-hidden">Авиабилеты</h1>
+        <form class="page__filter filter">
+            <fieldset class="filter__set filter-set">
+                <legend class="filter-set__title visually-hidden legend" >Количество пересадок</legend>
+                <ul class="filter__list">
+                    <li class="filter__item">
+                        <input id="all-offers" class="filter__checkbox" type="checkbox">
+                        <label for="all-offers" class="filter__label">Все</label>
+                    </li>
+                    <li class="filter__item">
+                        <input id="without-transplants" class="filter__checkbox" type="checkbox">
+                        <label for="without-transplants" class="filter__label">Без пересадок</label>
+                    </li>
+                    <li class="filter__item">
+                        <input id="one-transplants" class="filter__checkbox" type="checkbox">
+                        <label for="one-transplants" class="filter__label">1 пересадка</label>
+                    </li>
+                    <li class="filter__item">
+                        <input id="two-transplants" class="filter__checkbox" type="checkbox">
+                        <label for="two-transplants" class="filter__label">2 пересадка</label>
+                    </li>
+                    <li class="filter__item">
+                        <input id="three-transplants" class="filter__checkbox" type="checkbox">
+                        <label for="three-transplants" class="filter__label">3 пересадка</label>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+        <section class="page__sort sort">
+            <h2 class="sort__title visually-hidden">Сортировка</h2>
+            <ul class="sort__list">
+                <li class="sort__item">
+                    <a class="sort__link" href="#">Самый дешевый</a>
+                </li>
+                <li class="sort__item">
+                    <a class="sort__link" href="#">Самый быстрый</a>
+                </li>
+                <li class="sort__item">
+                    <a class="sort__link" href="#">Оптимальный</a>
+                </li>
+            </ul>
+        </section>
+        <section class="page__catalog catalog">
+            <h2 class="catalog__title visually-hidden">Билеты</h2>
+            <ul class="catalog__list">
+                <li class="catalog__item">
+                    <article class="catalog__card card">
+                        <h3 class="card__title"></h3>
+                        <img class="card__image" src="./image/s7-logo.png" alt="logo S7">
+                        <p class="card__price">13 400 Р</p>
+                        <table class="table card__table">
+                            <tbody>
+                                <tr class="table__row">
+                                    <td class="table__data">MOW – HKT</td>
+                                    <td class="table__data">В пути</td>
+                                    <td class="table__data">2 пересадки</td>
+                                </tr>
+                                <tr class="table__row">
+                                    <td class="table__data">10:45 – 08:00</td>
+                                    <td class="table__data">21ч 15м</td>
+                                    <td class="table__data">HKG, JNB</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </article>
+                </li>
+            </ul>
+            <a class="catalog__button button" href="#">Показать еще 5 билетов!</a>
+        </section>
+    </main>
+</body>
+</html>

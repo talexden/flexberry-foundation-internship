@@ -1,0 +1,75 @@
+.filter {
+  background-color: var(--white);
+  box-shadow: 0 2px 8px var(--box-shadow-color);
+  border-radius: 5px;
+}
+
+.filter-set {
+  margin: 0;
+  padding: 20px 0 10px;
+  border: none;
+}
+
+.filter-set__legend {
+  float: left;
+  padding: 0  20px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+}
+
+.filter-set__list {
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.filter-set__item {
+  position: relative;
+}
+
+.filter-set__item:hover {
+  background-color: var(--blue-lighty);
+  cursor: pointer;
+}
+
+.filter-set__checkbox {
+  appearance: none;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  height: 20px;
+  width: 20px;
+}
+
+.filter-set__label {
+  display: block;
+  padding: 10px 10px 10px 50px;
+  font-size: 13px;
+  line-height: 20px;
+  -moz-user-select: none;
+
+  user-select: none;
+}
+
+.filter-set__label:hover {
+  cursor: pointer;
+}
+
+.filter-set__checkbox::after {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: var(--blue-gray);
+  mask-image: var(--img-checkbox);
+  z-index: 1;
+}
+
+.filter-set__checkbox:checked::after {
+  mask-image: var(--img-checkbox-checked);
+  background-color: var(--blue);
+
+}
