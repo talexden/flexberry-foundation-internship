@@ -3,7 +3,9 @@ import './header.css';
 function Header ():JSX.Element {
   return (
     <header className="header page__header" >
-      <img className="logo header__logo container"src="../../../public/image/logo.svg" alt="Logo" />
+      <div className="logo header__logo">
+        <img className="logo__image" src="./image/logo.svg" alt="Логотип Aviasales" />
+      </div>
     </header>
   );
 }

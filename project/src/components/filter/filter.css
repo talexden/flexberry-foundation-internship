@@ -1,3 +1,11 @@
+.main__filter {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 232px;
+  margin-right: 20px;
+}
+
 .filter {
   background-color: var(--white);
   box-shadow: 0 2px 8px var(--box-shadow-color);
@@ -72,4 +80,13 @@
   mask-image: var(--img-checkbox-checked);
   background-color: var(--blue);
 
+}
+
+.page__logo {
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+.logo__image--filter {
+  transform: translate(-8px,9px);
 }

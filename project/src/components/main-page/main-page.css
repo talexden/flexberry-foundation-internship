@@ -7,11 +7,13 @@
   width: 754px;
 }
 
+.logo {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
 .main {
   display: flex;
 }
 
-.page__filter-wrapper {
-  width: 232px;
-  margin-right: 20px;
-}

@@ -7,7 +7,7 @@ function Card(): JSX.Element {
         <div className="card__header-wrapper">
           <h3 className="card__title visually-hidden">Рейсы S7</h3>
           <p className="card__price">13 400 Р</p>
-          <img className="card__image" src="../../../public/image/s7-logo.png" width="110" height="36" alt="logo S7"/>
+          <img className="card__image" src="./image/s7-logo.png" width="110" height="36" alt="logo S7"/>
         </div>
         <ul className="card__table-list">
           <li className="card__table-item">
